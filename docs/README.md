@@ -39,7 +39,7 @@ This project will be implemented with the following technologies:
 - Get a green bundle with `webpack`
 - Learn enough about Google Maps API, to render one location on it.
 
-**Day 2**:  Build the splash page
+**Day 2**:  Build the splash page and style
 
 -Complete splash page with styling.
 
