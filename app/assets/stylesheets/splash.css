@@ -13,7 +13,11 @@
 }
 
 .nav-bar{
-  width: 45vw;
+  width: 45%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
   top: 70px;
   color: rgb(153,154,154);
   position: absolute;
