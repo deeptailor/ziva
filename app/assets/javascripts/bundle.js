@@ -28059,25 +28059,17 @@
 	  function Splash(props) {
 	    _classCallCheck(this, Splash);
 	
-	    var _this = _possibleConstructorReturn(this, (Splash.__proto__ || Object.getPrototypeOf(Splash)).call(this, props));
-	
-	    _this.state = { menu_visible: true };
-	
-	    _this.show_menu = _this.show_menu.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, (Splash.__proto__ || Object.getPrototypeOf(Splash)).call(this, props));
 	  }
 	
 	  _createClass(Splash, [{
-	    key: 'show_menu',
-	    value: function show_menu(e) {
-	      console.log(this.state.menu_visible);
-	      if (this.state.menu_visible) {
-	        (0, _jquery2.default)(".menu-popup").toggle();
-	        this.setState({ menu_visible: false });
-	      } else {
-	        (0, _jquery2.default)(".menu-popup").toggle();
-	        this.setState({ menu_visible: true });
-	      }
+	    key: 'urlPush',
+	    value: function urlPush(name) {
+	      var _this2 = this;
+	
+	      return function (e) {
+	        return _this2.props.router.push(name);
+	      };
 	    }
 	  }, {
 	    key: 'render',
@@ -28098,17 +28090,17 @@
 	            null,
 	            _react2.default.createElement(
 	              'li',
-	              null,
+	              { onClick: this.urlPush('gallery') },
 	              'Gallery'
 	            ),
 	            _react2.default.createElement(
 	              'li',
-	              null,
+	              { onClick: this.urlPush('about') },
 	              'About'
 	            ),
 	            _react2.default.createElement(
 	              'li',
-	              null,
+	              { onClick: this.urlPush('contact') },
 	              'Contact'
 	            )
 	          )
@@ -28123,7 +28115,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'a',
-	            null,
+	            { href: 'https://www.facebook.com/ZivaBridalBoutique' },
 	            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479839827/facebook_mlxyi5.png' })
 	          )
 	        )

@@ -4,20 +4,12 @@ import $ from 'jquery';
 class Splash extends React.Component{
   constructor(props){
     super(props)
-    this.state = {menu_visible: true}
-
-    this.show_menu = this.show_menu.bind(this);
   }
 
-  show_menu(e){
-    console.log(this.state.menu_visible)
-    if(this.state.menu_visible){
-      $(".menu-popup").toggle();
-      this.setState({menu_visible: false});
-    }else{
-      $(".menu-popup").toggle();
-      this.setState({menu_visible:true});
-    }
+  urlPush(name){
+    return (e) => (
+      this.props.router.push(name)
+    )
   }
 
   render(){
@@ -28,14 +20,14 @@ class Splash extends React.Component{
         </div>
         <div className="nav-bar">
           <ul>
-            <li>Gallery</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li onClick={this.urlPush('gallery')}>Gallery</li>
+            <li onClick={this.urlPush('about')}>About</li>
+            <li onClick={this.urlPush('contact')}>Contact</li>
           </ul>
         </div>
         <div className="icons">
           <a href="https://www.instagram.com/zivabridal/"><img src="https://res.cloudinary.com/deeptailor/image/upload/v1479839827/instagram_fpwbgc.png"/></a>
-          <a><img src="https://res.cloudinary.com/deeptailor/image/upload/v1479839827/facebook_mlxyi5.png"/></a>
+          <a href="https://www.facebook.com/ZivaBridalBoutique"><img src="https://res.cloudinary.com/deeptailor/image/upload/v1479839827/facebook_mlxyi5.png"/></a>
         </div>
       </div>
     );
