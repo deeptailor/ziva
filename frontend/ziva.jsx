@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Root from './components/root.jsx';
+
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('main');
-    ReactDOM.render(<h1>Welcome to Ziva</h1>, root);
+    ReactDOM.render(<Root/>, root);
 });
