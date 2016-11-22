@@ -30,6 +30,7 @@
 
 .nav-bar > ul > li{
   border-radius: 5px 5px 0 0;
+  padding: 5px 2px 2px 2px;
   width: 12%;
   border-bottom: 2px solid rgba(250,164,181,0.5);
   text-align: center;
