@@ -33,6 +33,10 @@ class Splash extends React.Component{
             <li>Contact</li>
           </ul>
         </div>
+        <div className="icons">
+          <a href="https://www.instagram.com/zivabridal/"><img src="https://res.cloudinary.com/deeptailor/image/upload/v1479839827/instagram_fpwbgc.png"/></a>
+          <a><img src="https://res.cloudinary.com/deeptailor/image/upload/v1479839827/facebook_mlxyi5.png"/></a>
+        </div>
       </div>
     );
   }

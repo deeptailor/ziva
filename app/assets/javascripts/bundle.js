@@ -28112,6 +28112,20 @@
 	              'Contact'
 	            )
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'icons' },
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.instagram.com/zivabridal/' },
+	            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479839827/instagram_fpwbgc.png' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            null,
+	            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479839827/facebook_mlxyi5.png' })
+	          )
 	        )
 	      );
 	    }
