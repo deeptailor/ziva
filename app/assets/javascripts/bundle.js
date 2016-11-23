@@ -21474,13 +21474,18 @@
 	
 	var _splash2 = _interopRequireDefault(_splash);
 	
+	var _gallery = __webpack_require__(264);
+	
+	var _gallery2 = _interopRequireDefault(_gallery);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Root = function Root() {
 	  return _react2.default.createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.hashHistory },
-	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _splash2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _splash2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/gallery', component: _gallery2.default })
 	  );
 	};
 	
@@ -38353,6 +38358,171 @@
 	return jQuery;
 	} );
 
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(263);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Gallery = function (_React$Component) {
+	  _inherits(Gallery, _React$Component);
+	
+	  function Gallery(props) {
+	    _classCallCheck(this, Gallery);
+	
+	    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+	  }
+	
+	  _createClass(Gallery, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {}
+	  }, {
+	    key: 'urlPush',
+	    value: function urlPush(name) {
+	      var _this2 = this;
+	
+	      return function (e) {
+	        return _this2.props.router.push(name);
+	      };
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'gallery-main' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'nav-bar-gallery' },
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              { onClick: this.urlPush('/') },
+	              'Home'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { onClick: this.urlPush('about') },
+	              'About'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { onClick: this.urlPush('contact') },
+	              'Contact'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'logo-gallery' },
+	          _react2.default.createElement('img', { className: 'logo-img', src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479757035/logo-transparent_cx8wyr.png' }),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Bridal Gallery'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'multiple-photos' },
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '1'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '2'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '3'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '4'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '5'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '6'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '7'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '8'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '9'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '10'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '11'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '12'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Gallery;
+	}(_react2.default.Component);
+	
+	exports.default = Gallery;
 
 /***/ }
 /******/ ]);
