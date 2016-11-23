@@ -38456,12 +38456,47 @@
 	            _react2.default.createElement(
 	              'li',
 	              null,
-	              '1'
+	              _react2.default.createElement('img', { src: 'https://n4.sdlcdn.com/imgs/b/g/i/Kesar-Sarees-Green-Faux-Georgette-SDL879067026-1-f3854.jpg' })
 	            ),
 	            _react2.default.createElement(
 	              'li',
 	              null,
-	              '2'
+	              _react2.default.createElement('img', { src: 'http://img4.utsavfashion.com/syc/syc4718/syc4718-enlarge.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'http://im.rediff.com/fashion/2015/jan/pink-white-floral-designer-georgette-party-wear-saree-with-blouse-15901.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://n4.sdlcdn.com/imgs/a/v/s/Shree-Ambey-Designer-Sarees-Faux-SDL401688101-1-5dfe7.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://images.cbazaar.com/images/prd_img_b/beige-n-salmon-orange-net-lehenga-saree-sacvp5493-b.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'http://img4.utsavfashion.com/syc/syc4718/syc4718-enlarge.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://images.cbazaar.com/images/off-white-n-magenta-printed-half-n-half-saree-sacvi19920-pl.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://s-media-cache-ak0.pinimg.com/originals/80/0b/b6/800bb6ff822913998adceccb1a1260aa.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'http://static.indiarush.com/media/catalog/product/cache/1/small_image/350x350/9df78eab33525d08d6e5fb8d27136e95/r/v/rvcg01-07oct16.jpg' })
 	            ),
 	            _react2.default.createElement(
 	              'li',

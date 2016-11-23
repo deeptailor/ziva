@@ -12,9 +12,10 @@
 .nav-bar-gallery{
   width: 350px;
   right: 50px;
-  top: 10px;
+  top: 20px;
   color: rgb(153,154,154);
   position: absolute;
+  z-index: 3;
 }
 
 .nav-bar-gallery > ul{
@@ -75,4 +76,10 @@
   height: 300px;
   margin: 20px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.multiple-photos > ul > li > img{
+  height: 100%;
 }
