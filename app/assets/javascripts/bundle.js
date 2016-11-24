@@ -28077,6 +28077,16 @@
 	      };
 	    }
 	  }, {
+	    key: 'scrollTo',
+	    value: function scrollTo(div) {
+	
+	      return function () {
+	        var divPosition = (0, _jquery2.default)('.' + div).offset();
+	
+	        (0, _jquery2.default)('html, body').animate({ scrollTop: divPosition.top }, "slow");
+	      };
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -28084,44 +28094,81 @@
 	        { className: 'splash-main', style: { "backgroundColor": "#fdf3f4" } },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'logo' },
-	          _react2.default.createElement('img', { className: 'logo-img', src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479757035/logo-transparent_cx8wyr.png' })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'nav-bar' },
+	          { className: 'home-div' },
 	          _react2.default.createElement(
-	            'ul',
-	            null,
+	            'div',
+	            { className: 'logo' },
+	            _react2.default.createElement('img', { className: 'logo-img', src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479757035/logo-transparent_cx8wyr.png' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'nav-bar' },
 	            _react2.default.createElement(
-	              'li',
-	              { onClick: this.urlPush('gallery') },
-	              'Gallery'
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                { onClick: this.urlPush('gallery') },
+	                'Gallery'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { onClick: this.scrollTo('about') },
+	                'About'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { onClick: this.scrollTo('contact') },
+	                'Contact'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'icons' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.instagram.com/zivabridal/' },
+	              _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479839827/instagram_fpwbgc.png' })
 	            ),
 	            _react2.default.createElement(
-	              'li',
-	              { onClick: this.urlPush('about') },
-	              'About'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { onClick: this.urlPush('contact') },
-	              'Contact'
+	              'a',
+	              { href: 'https://www.facebook.com/ZivaBridalBoutique' },
+	              _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479839827/facebook_mlxyi5.png' })
 	            )
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'icons' },
+	          { className: 'about' },
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.instagram.com/zivabridal/' },
-	            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479839827/instagram_fpwbgc.png' })
+	            'h1',
+	            null,
+	            'About'
+	          ),
+	          _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/c_scale,w_892/v1479948136/floor-image_gmotp8.jpg' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'about-text' },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'contact' },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'Contact Us'
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.facebook.com/ZivaBridalBoutique' },
-	            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479839827/facebook_mlxyi5.png' })
+	            'p',
+	            null,
+	            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
 	          )
 	        )
 	      );
