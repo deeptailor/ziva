@@ -22,8 +22,6 @@ class Gallery extends React.Component{
         <div className="nav-bar-gallery">
           <ul>
             <li onClick={this.urlPush('/')}>Home</li>
-            <li onClick={this.urlPush('about')}>About</li>
-            <li onClick={this.urlPush('contact')}>Contact</li>
           </ul>
         </div>
 

@@ -1,5 +1,6 @@
 #main{
   background-color: #fdf3f4;
+  color: rgb(153,154,154);
 }
 
 .splash-main{
@@ -21,18 +22,19 @@
 }
 
 .logo-img{
-  width: 80vw;
+  width: 55vw;
+  min-width: 500px;
 }
 
 .nav-bar{
-  width: 45%;
-  left: 0;
-  right: 0;
-  margin-right: auto;
-  margin-left: auto;
-  top: 70px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  top: 0;
   color: rgb(153,154,154);
-  position: absolute;
+  background: rgba(255,175,192,0.5);
 }
 
 
@@ -40,28 +42,28 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 60%;
   list-style: none;
   /*border-bottom: 2px solid rgba(250,164,181,0.5);*/
 }
 
 .nav-bar > ul > li{
-  border-radius: 5px 5px 0 0;
-  padding: 5px 2px 2px 2px;
+  font-size: 18px;
+  border-radius: 10px;
+  padding:  5px 15px;
   border: none;
-  width: 12%;
   text-align: center;
-  transition: border-bottom 1s;
 }
 
 .nav-bar > ul > li:hover{
   cursor: pointer;
-  border-bottom: 1px solid rgba(250,164,181,0.5);
+  color: white;
+  background-color: rgba(250,164,181,0.7);
 }
 
 .icons{
-  position: absolute;
-  top: 10px;
+  position: fixed;
+  top: 18px;
   right: 10px;
 }
 
@@ -80,29 +82,50 @@
 
 .about{
   width: 60%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.about-content{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .about > h1 {
   text-align: center;
   font-size: 34px;
-  margin-bottom: 30px;
+  margin: 100px 0;
 }
 
-.about > img{
-  width: 500px;
+.about-content > img{
+  height: 500px;
+}
+
+.about-text{
+  padding: 60px;
+  font-size: 18px;
 }
 
 .contact{
   width: 60%;
   margin-top: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact > h1{
   text-align: center;
   font-size: 34px;
   margin-bottom: 30px;
+}
+
+#map{
+  width: 500px;
+  height: 500px;
 }

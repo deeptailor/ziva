@@ -21474,7 +21474,7 @@
 	
 	var _splash2 = _interopRequireDefault(_splash);
 	
-	var _gallery = __webpack_require__(264);
+	var _gallery = __webpack_require__(263);
 	
 	var _gallery2 = _interopRequireDefault(_gallery);
 	
@@ -28046,7 +28046,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(263);
+	var _jquery = __webpack_require__(264);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -28068,6 +28068,23 @@
 	  }
 	
 	  _createClass(Splash, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var myLatLng = { lat: 41.899875, lng: -87.667639 };
+	      var mapOptions = {
+	        center: myLatLng,
+	        zoom: 16
+	      };
+	
+	      this.map = new google.maps.Map(this.mapNode, mapOptions);
+	
+	      var marker = new google.maps.Marker({
+	        position: myLatLng,
+	        map: this.map,
+	        title: 'Hello World!'
+	      });
+	    }
+	  }, {
 	    key: 'urlPush',
 	    value: function urlPush(name) {
 	      var _this2 = this;
@@ -28089,6 +28106,8 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this3 = this;
+	
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'splash-main', style: { "backgroundColor": "#fdf3f4" } },
@@ -28106,6 +28125,11 @@
 	            _react2.default.createElement(
 	              'ul',
 	              null,
+	              _react2.default.createElement(
+	                'li',
+	                { onClick: this.scrollTo('home-div') },
+	                'Home'
+	              ),
 	              _react2.default.createElement(
 	                'li',
 	                { onClick: this.urlPush('gallery') },
@@ -28146,14 +28170,18 @@
 	            null,
 	            'About'
 	          ),
-	          _react2.default.createElement('img', { src: 'https://res.cloudinary.com/deeptailor/image/upload/c_scale,w_892/v1479948136/floor-image_gmotp8.jpg' }),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'about-text' },
+	            { className: 'about-content' },
+	            _react2.default.createElement('img', { src: 'https://scontent.fsnc1-3.fna.fbcdn.net/v/t1.0-9/14955959_1253133534750825_8327740457325082201_n.jpg?oh=730d2a85dd67028440b7c3d256ba1f40&oe=58BD0177' }),
 	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	              'div',
+	              { className: 'about-text' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Ziva is a South Asian bridal boutique that provides one-on-one appointments for quality designer clothing! Call or email us for your appointment!'
+	              )
 	            )
 	          )
 	        ),
@@ -28165,11 +28193,9 @@
 	            null,
 	            'Contact Us'
 	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-	          )
+	          _react2.default.createElement('div', { id: 'map', ref: function ref(map) {
+	              return _this3.mapNode = map;
+	            } })
 	        )
 	      );
 	    }
@@ -28182,6 +28208,196 @@
 
 /***/ },
 /* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(264);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Gallery = function (_React$Component) {
+	  _inherits(Gallery, _React$Component);
+	
+	  function Gallery(props) {
+	    _classCallCheck(this, Gallery);
+	
+	    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+	  }
+	
+	  _createClass(Gallery, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {}
+	  }, {
+	    key: 'urlPush',
+	    value: function urlPush(name) {
+	      var _this2 = this;
+	
+	      return function (e) {
+	        return _this2.props.router.push(name);
+	      };
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'gallery-main' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'nav-bar-gallery' },
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              { onClick: this.urlPush('/') },
+	              'Home'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'logo-gallery' },
+	          _react2.default.createElement('img', { className: 'logo-img', src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479757035/logo-transparent_cx8wyr.png' }),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Bridal Gallery'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'multiple-photos' },
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://n4.sdlcdn.com/imgs/b/g/i/Kesar-Sarees-Green-Faux-Georgette-SDL879067026-1-f3854.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'http://img4.utsavfashion.com/syc/syc4718/syc4718-enlarge.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'http://im.rediff.com/fashion/2015/jan/pink-white-floral-designer-georgette-party-wear-saree-with-blouse-15901.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://n4.sdlcdn.com/imgs/a/v/s/Shree-Ambey-Designer-Sarees-Faux-SDL401688101-1-5dfe7.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://images.cbazaar.com/images/prd_img_b/beige-n-salmon-orange-net-lehenga-saree-sacvp5493-b.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'http://img4.utsavfashion.com/syc/syc4718/syc4718-enlarge.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://images.cbazaar.com/images/off-white-n-magenta-printed-half-n-half-saree-sacvi19920-pl.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'https://s-media-cache-ak0.pinimg.com/originals/80/0b/b6/800bb6ff822913998adceccb1a1260aa.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { src: 'http://static.indiarush.com/media/catalog/product/cache/1/small_image/350x350/9df78eab33525d08d6e5fb8d27136e95/r/v/rvcg01-07oct16.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '3'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '4'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '5'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '6'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '7'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '8'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '9'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '10'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '11'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '12'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Gallery;
+	}(_react2.default.Component);
+	
+	exports.default = Gallery;
+
+/***/ },
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -38405,206 +38621,6 @@
 	return jQuery;
 	} );
 
-
-/***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _jquery = __webpack_require__(263);
-	
-	var _jquery2 = _interopRequireDefault(_jquery);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Gallery = function (_React$Component) {
-	  _inherits(Gallery, _React$Component);
-	
-	  function Gallery(props) {
-	    _classCallCheck(this, Gallery);
-	
-	    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
-	  }
-	
-	  _createClass(Gallery, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {}
-	  }, {
-	    key: 'urlPush',
-	    value: function urlPush(name) {
-	      var _this2 = this;
-	
-	      return function (e) {
-	        return _this2.props.router.push(name);
-	      };
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'gallery-main' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'nav-bar-gallery' },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              { onClick: this.urlPush('/') },
-	              'Home'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { onClick: this.urlPush('about') },
-	              'About'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { onClick: this.urlPush('contact') },
-	              'Contact'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'logo-gallery' },
-	          _react2.default.createElement('img', { className: 'logo-img', src: 'https://res.cloudinary.com/deeptailor/image/upload/v1479757035/logo-transparent_cx8wyr.png' }),
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Bridal Gallery'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'multiple-photos' },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'https://n4.sdlcdn.com/imgs/b/g/i/Kesar-Sarees-Green-Faux-Georgette-SDL879067026-1-f3854.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'http://img4.utsavfashion.com/syc/syc4718/syc4718-enlarge.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'http://im.rediff.com/fashion/2015/jan/pink-white-floral-designer-georgette-party-wear-saree-with-blouse-15901.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'https://n4.sdlcdn.com/imgs/a/v/s/Shree-Ambey-Designer-Sarees-Faux-SDL401688101-1-5dfe7.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'https://images.cbazaar.com/images/prd_img_b/beige-n-salmon-orange-net-lehenga-saree-sacvp5493-b.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'http://img4.utsavfashion.com/syc/syc4718/syc4718-enlarge.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'https://images.cbazaar.com/images/off-white-n-magenta-printed-half-n-half-saree-sacvi19920-pl.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'https://s-media-cache-ak0.pinimg.com/originals/80/0b/b6/800bb6ff822913998adceccb1a1260aa.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('img', { src: 'http://static.indiarush.com/media/catalog/product/cache/1/small_image/350x350/9df78eab33525d08d6e5fb8d27136e95/r/v/rvcg01-07oct16.jpg' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '3'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '4'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '5'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '6'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '7'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '8'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '9'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '10'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '11'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '12'
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Gallery;
-	}(_react2.default.Component);
-	
-	exports.default = Gallery;
 
 /***/ }
 /******/ ]);
