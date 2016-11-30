@@ -87,6 +87,8 @@ class Splash extends React.Component{
                   <input type="text" name="name" required/><br/>
                   E-mail:<br/>
                   <input type="email" name="mail" required/><br/>
+                  Phone:<br/>
+                  <input type="number" name="phone-number" required/><br/>
                   Desired Appointment Date:<br/>
                   <input id="date" type="date" name="appointment-date"/><br/>
                   Additional Info:<br/>
