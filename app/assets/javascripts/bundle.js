@@ -28202,25 +28202,50 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'appointments' },
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'h1',
+	                  null,
+	                  'To request an appointment date please fill out form:'
+	                ),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'form',
+	                  { action: 'mailto:deeptailor@gmail.com?subject=ziva%20appointment', method: 'post', encType: 'text/plain' },
+	                  'Name:',
+	                  _react2.default.createElement('br', null),
+	                  _react2.default.createElement('input', { type: 'text', name: 'name', required: true }),
+	                  _react2.default.createElement('br', null),
+	                  'E-mail:',
+	                  _react2.default.createElement('br', null),
+	                  _react2.default.createElement('input', { type: 'email', name: 'mail', required: true }),
+	                  _react2.default.createElement('br', null),
+	                  'Desired Appointment Date:',
+	                  _react2.default.createElement('br', null),
+	                  _react2.default.createElement('input', { id: 'date', type: 'date', name: 'requested-appointment-date' }),
+	                  _react2.default.createElement('br', null),
+	                  'Additional Info:',
+	                  _react2.default.createElement('br', null),
+	                  _react2.default.createElement('input', { type: 'text-box', name: 'additional-info', size: '50' }),
+	                  _react2.default.createElement('br', null),
+	                  _react2.default.createElement('br', null),
+	                  _react2.default.createElement('input', { type: 'submit', value: 'Send' }),
+	                  _react2.default.createElement('input', { type: 'reset', value: 'Reset' })
+	                ),
+	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'ul',
 	                  null,
 	                  _react2.default.createElement(
 	                    'li',
 	                    null,
-	                    'Email'
+	                    'Phone: '
 	                  ),
 	                  _react2.default.createElement(
 	                    'li',
 	                    null,
-	                    'Phone'
+	                    'Email: '
 	                  )
-	                ),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(
-	                  'h1',
-	                  null,
-	                  'Email or call us to book an appointment'
 	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(

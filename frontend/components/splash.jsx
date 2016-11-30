@@ -79,12 +79,26 @@ class Splash extends React.Component{
           <div className='contact-content'>
             <div className="contact-text">
               <div className="appointments">
-                <ul>
-                  <li>Email</li>
-                  <li>Phone</li>
-                </ul>
               <br/>
-                <h1>Email or call us to book an appointment</h1>
+                <h1>To request an appointment date please fill out form:</h1>
+                <br/>
+                <form action="mailto:deeptailor@gmail.com?subject=ziva%20appointment" method="post" encType="text/plain">
+                  Name:<br/>
+                  <input type="text" name="name" required/><br/>
+                  E-mail:<br/>
+                  <input type="email" name="mail" required/><br/>
+                  Desired Appointment Date:<br/>
+                  <input id="date" type="date" name="requested-appointment-date"/><br/>
+                  Additional Info:<br/>
+                  <input type="text-box" name="additional-info" size="50"/><br/><br/>
+                  <input type="submit" value="Send"/>
+                  <input type="reset" value="Reset"/>
+                </form>
+                <br/>
+                <ul>
+                  <li>Phone: </li>
+                  <li>Email: </li>
+                </ul>
                 <br/>
                 <div className="location">
                   <h1>Our boutique is located at:</h1>
