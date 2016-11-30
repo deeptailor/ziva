@@ -173,7 +173,7 @@
   }
 
   .nav-bar{
-    height: 10vh;
+    height: 15vh;
   }
 
   .nav-bar > ul{
@@ -181,14 +181,23 @@
   }
 
   .nav-bar > ul > li{
-    font-size: 36px;
+    font-size: 28px;
+  }
+
+  .icons{
+    position: fixed;
+    top: 90vh;
+  }
+
+  .icons > a > img{
+    height: 40px;
   }
 
   .logo{
     text-align: center;
   }
   .logo-img{
-    width: 90%;
+    width: 100%;
   }
 
   .about-content{
@@ -202,6 +211,7 @@
   .about-text{
     margin: 20px 0;
     width: 80%;
+    font-size: 24px;
   }
 
   .contact-content{
