@@ -184,6 +184,7 @@
   .contact-content{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .contact-text{
     width: 100%;
