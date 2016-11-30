@@ -173,13 +173,13 @@
   }
 
   .nav-bar{
-    height: 10%;
+    height: 10vh;
   }
 
   .nav-bar > ul > li{
-    font-size: 24px;
+    font-size: 36px;
   }
-  
+
   .logo{
     text-align: center;
   }
