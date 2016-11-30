@@ -155,6 +155,7 @@
 
 .map-container{
   width: 50%;
+  height: 80%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -163,8 +164,8 @@
 }
 
 #map{
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 
 @media(orientation: portrait){
@@ -188,5 +189,9 @@
   }
   .contact-text{
     width: 100%;
+  }
+  .map-container{
+    width: 100%;
+    margin-top: 20px;
   }
 }
