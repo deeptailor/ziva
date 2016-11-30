@@ -22,8 +22,7 @@
 }
 
 .logo-img{
-  width: 55vw;
-  min-width: 500px;
+  width: 60vw;
 }
 
 .nav-bar{
@@ -169,6 +168,10 @@
 }
 
 @media(orientation: portrait){
+  .logo-img{
+    width: 90%;
+  }
+  
   .about-content{
     flex-direction: column;
     align-items: center;
