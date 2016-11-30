@@ -173,7 +173,7 @@
   }
 
   .nav-bar{
-    height: 15vh;
+    height: 10vh;
   }
 
   .nav-bar > ul{
@@ -186,7 +186,7 @@
 
   .icons{
     position: fixed;
-    top: 90vh;
+    top: 12vh;
   }
 
   .icons > a > img{
