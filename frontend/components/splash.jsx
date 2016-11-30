@@ -80,9 +80,9 @@ class Splash extends React.Component{
             <div className="contact-text">
               <div className="appointments">
               <br/>
-                <h1>To request an appointment date please fill out form:</h1>
+                <h1>To request an appointment date please fill out the form below:</h1>
                 <br/>
-                <form action="mailto:deeptailor@gmail.com?subject=ziva%20appointment" method="post" encType="text/plain">
+                <form action="mailto:zivabridal@gmail.com?subject=ziva%20appointment" method="post" encType="text/plain">
                   Name:<br/>
                   <input type="text" name="name" required/><br/>
                   E-mail:<br/>
@@ -96,8 +96,8 @@ class Splash extends React.Component{
                 </form>
                 <br/>
                 <ul>
-                  <li>Phone: </li>
-                  <li>Email: </li>
+                  <li>Phone: (847)893-9842</li>
+                  <li>Email:&nbsp;<a href="mailto:zivabridal@gmail.com">zivabridal@gmail.com</a></li>
                 </ul>
                 <br/>
                 <div className="location">
@@ -108,6 +108,7 @@ class Splash extends React.Component{
                   </div>
                 </div>
               </div>
+              <br/>
             </div>
             <div className="map-container">
               <div id='map' ref={ map => this.mapNode = map }></div>

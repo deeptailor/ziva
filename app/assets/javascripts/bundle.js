@@ -28206,12 +28206,12 @@
 	                _react2.default.createElement(
 	                  'h1',
 	                  null,
-	                  'To request an appointment date please fill out form:'
+	                  'To request an appointment date please fill out the form below:'
 	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'form',
-	                  { action: 'mailto:deeptailor@gmail.com?subject=ziva%20appointment', method: 'post', encType: 'text/plain' },
+	                  { action: 'mailto:zivabridal@gmail.com?subject=ziva%20appointment', method: 'post', encType: 'text/plain' },
 	                  'Name:',
 	                  _react2.default.createElement('br', null),
 	                  _react2.default.createElement('input', { type: 'text', name: 'name', required: true }),
@@ -28239,12 +28239,17 @@
 	                  _react2.default.createElement(
 	                    'li',
 	                    null,
-	                    'Phone: '
+	                    'Phone: (847)893-9842'
 	                  ),
 	                  _react2.default.createElement(
 	                    'li',
 	                    null,
-	                    'Email: '
+	                    'Email:\xA0',
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: 'mailto:zivabridal@gmail.com' },
+	                      'zivabridal@gmail.com'
+	                    )
 	                  )
 	                ),
 	                _react2.default.createElement('br', null),
@@ -28271,7 +28276,8 @@
 	                    )
 	                  )
 	                )
-	              )
+	              ),
+	              _react2.default.createElement('br', null)
 	            ),
 	            _react2.default.createElement(
 	              'div',
