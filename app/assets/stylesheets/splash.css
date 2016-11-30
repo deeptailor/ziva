@@ -176,6 +176,10 @@
     height: 10vh;
   }
 
+  .nav-bar > ul{
+    width: 90%;
+  }
+
   .nav-bar > ul > li{
     font-size: 36px;
   }
