@@ -167,7 +167,7 @@
   height: 500px;
 }
 
-@media(max-width: 1080px){
+@media(orientation: portrait){
   .about-content{
     flex-direction: column;
     align-items: center;
