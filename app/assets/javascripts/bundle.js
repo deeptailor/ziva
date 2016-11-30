@@ -28193,9 +28193,56 @@
 	            null,
 	            'Contact Us'
 	          ),
-	          _react2.default.createElement('div', { id: 'map', ref: function ref(map) {
-	              return _this3.mapNode = map;
-	            } })
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'contact-content' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'contact-text' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'appointments' },
+	                _react2.default.createElement(
+	                  'ul',
+	                  null,
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'Email'
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'Phone'
+	                  )
+	                ),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'h1',
+	                  null,
+	                  'Email or call us to book an appointment'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'map-container' },
+	              _react2.default.createElement('div', { id: 'map', ref: function ref(map) {
+	                  return _this3.mapNode = map;
+	                } }),
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                '1604 W.Augusta'
+	              ),
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Chicago, IL'
+	              )
+	            )
+	          )
 	        )
 	      );
 	    }
