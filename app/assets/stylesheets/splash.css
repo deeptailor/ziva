@@ -22,7 +22,7 @@
 }
 
 .logo-img{
-  width: 60vw;
+  width: 58vw;
 }
 
 .nav-bar{
@@ -168,10 +168,13 @@
 }
 
 @media(orientation: portrait){
+  .logo{
+    text-align: center;
+  }
   .logo-img{
     width: 90%;
   }
-  
+
   .about-content{
     flex-direction: column;
     align-items: center;
