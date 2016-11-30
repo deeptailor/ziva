@@ -146,7 +146,6 @@
 }
 
 #map{
-  width: 100%;
-  height: 70%;
-  border-radius: 25px;
+  width: 30vw;
+  height: 50vh;
 }
