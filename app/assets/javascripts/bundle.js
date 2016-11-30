@@ -28221,6 +28221,30 @@
 	                  'h1',
 	                  null,
 	                  'Email or call us to book an appointment'
+	                ),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'location' },
+	                  _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Our boutique is located at:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    null,
+	                    _react2.default.createElement(
+	                      'h1',
+	                      null,
+	                      '1604 W.Augusta Ave'
+	                    ),
+	                    _react2.default.createElement(
+	                      'h1',
+	                      null,
+	                      'Chicago, IL'
+	                    )
+	                  )
 	                )
 	              )
 	            ),
@@ -28229,18 +28253,7 @@
 	              { className: 'map-container' },
 	              _react2.default.createElement('div', { id: 'map', ref: function ref(map) {
 	                  return _this3.mapNode = map;
-	                } }),
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(
-	                'h1',
-	                null,
-	                '1604 W.Augusta'
-	              ),
-	              _react2.default.createElement(
-	                'h1',
-	                null,
-	                'Chicago, IL'
-	              )
+	                } })
 	            )
 	          )
 	        )

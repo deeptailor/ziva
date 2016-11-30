@@ -85,13 +85,18 @@ class Splash extends React.Component{
                 </ul>
               <br/>
                 <h1>Email or call us to book an appointment</h1>
+                <br/>
+                <div className="location">
+                  <h1>Our boutique is located at:</h1>
+                  <div>
+                    <h1>1604 W.Augusta Ave</h1>
+                    <h1>Chicago, IL</h1>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="map-container">
               <div id='map' ref={ map => this.mapNode = map }></div>
-              <br/>
-              <h1>1604 W.Augusta</h1>
-              <h1>Chicago, IL</h1>
             </div>
           </div>
         </div>
