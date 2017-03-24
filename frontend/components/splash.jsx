@@ -65,7 +65,7 @@ class Splash extends React.Component{
         <div className="about">
           <h1>About</h1>
           <div className="about-content">
-            <img src='https://scontent.fsnc1-3.fna.fbcdn.net/v/t1.0-9/14955959_1253133534750825_8327740457325082201_n.jpg?oh=730d2a85dd67028440b7c3d256ba1f40&oe=58BD0177'></img>
+            <img src='https://res.cloudinary.com/deeptailor/image/upload/v1490398433/ziva_skmtzt.jpg'></img>
             <div className="about-text">
               <p>
                 Ziva is a South Asian bridal boutique that provides one-on-one appointments for quality designer clothing! Call or email us for your appointment!
